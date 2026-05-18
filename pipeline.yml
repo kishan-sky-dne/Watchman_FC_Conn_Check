@@ -30,6 +30,18 @@ jobs:
                 KUBECONF_DIR="repo/kubecon"
                 NAMESPACE="dne-develop"
 
+                # Ensure kubelogin is available (try Homebrew first)
+                if command -v kubelogin >/dev/null 2>&1; then
+                  echo "kubelogin already installed"
+                else
+                  if command -v brew >/dev/null 2>&1; then
+                    echo "Installing kubelogin via brew"
+                    brew install Azure/kubelogin/kubelogin || true
+                  else
+                    echo "brew not found; kubelogin not installed. Install kubelogin or provide a container image with it."
+                  fi
+                fi
+
                 if [ ! -d "$KUBECONF_DIR" ]; then
                   echo "kubecon directory not found at $KUBECONF_DIR" >&2
                   exit 1
