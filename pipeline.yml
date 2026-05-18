@@ -51,8 +51,8 @@ jobs:
                 for kc in "$KUBECONF_DIR"/*; do
                   if [ -f "$kc" ]; then
                     found=true
-                    echo "----- Pods using kubeconfig: $kc (namespace: $NAMESPACE) -----"
-                    kubectl --kubeconfig="$kc" get pods -n "$NAMESPACE" -o wide || echo "kubectl failed for $kc"
+                    echo "----- Namespaces using kubeconfig: $kc -----"
+                    kubectl --kubeconfig="$kc" get ns -o wide || echo "kubectl failed for $kc"
                     echo
                   fi
                 done
