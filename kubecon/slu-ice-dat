@@ -1,0 +1,72 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "slu-ice-dat"
+  cluster:
+    server: "https://dat.fluidcloud.bskyb.com/k8s/clusters/c-wqz2f"
+- name: "slu-ice-dat-vdc-dat-slu-control-1f02c8-0bfef8"
+  cluster:
+    server: "https://10.122.66.21:6443"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN3akNDQ\
+      WFxZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFTTVJBd0RnWURWUVFERXdkcmRXSmwKT\
+      FdOaE1CNFhEVEl4TURFeE1qRXlORFExT1ZvWERUTXhNREV4TURFeU5EUTFPVm93RWpFUU1BNEdBM\
+      VVFQXhNSAphM1ZpWlMxallUQ0NBU0l3RFFZSktvWklodmNOQVFFQkJRQURnZ0VQQURDQ0FRb0NnZ\
+      0VCQUtqWS9lczdOc0ZJCkNYd3VHRDArNmRpcWhhN2Zqb210Y20vcjdlMExsZzJkV2VFenJyZ2YyV\
+      lMvVGN6RGdmZUkwK3BtdmgzR2RveGcKcVA4Nm5Zb25KaGp0Ris4NDAyWWdLZEplLy9ZRDdJSUxxe\
+      VkzdUtNSEd4QmdzNzl0d2d5SlVUbjl3TUViSG9GaAo3MmlYczJlMGRUVExENW9MVVRQTzBldEpTV\
+      zJUU3d1b1RpT05ieStQUHdFcTFkSlBIQ3BTOE5sZVFXOEViVzZqCndvZGtOTXBlWHBZQ0ZKVThsT\
+      VZPYWlJVVFTOXBxczFDa2pNWXNtZmNTbGRObEhNWGhZTWJ0M1ZOeXFMSGFDZlQKWENRcXZydFRBW\
+      Gw3WC9NZ3k5UVNGaUNNa3VWMFQ3a1JLRzBXSnVFOTBFS2tkU2JWaE1RNXpaNkpIak55VHg4TwpHb\
+      kttQXoxS1RzRUNBd0VBQWFNak1DRXdEZ1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93U\
+      UZNQU1CCkFmOHdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBQWZyTUJidVVER1ZsMEcxQnoybU1Ca\
+      0w3Y0diM21mSy9XZjQKcEQ5d1JNK0JHcEJ2OEowOUY3cTJmWC9PbE5rRGtKbGptcnY3aUZLTnY1b\
+      HBCZ0V0VHZ0NnQyZDhjRTZBdmVzawpSSXJDTkFtZ3hRMkptMFJXSHcxc0dRN3NUcWZocTRGaHFLV\
+      ldrQTdZdm5vSklhdm9DNHFINENPc0J3eHdaeXRHCllucU1mZVptRDBLenZBRmRMRUc5Wk5TVEMvN\
+      nJoWlhBV0lHNWNydGxvU1I5THJKTDBmMEVRdDhlMjAxdXdpREwKdmtTUGw3SXk2dWR0SFFKcXFnK\
+      2ZwRUdSS1haeWVqbjZySVlraERkWkpkaDI5RTE5M2wyMWIxWlpVMzkzem80eQpacFEzL3M1SXc5e\
+      URYOUhhZmdYbnZYb3d1OEFTNDQ4dndHM0dxckpGM0JsRWJPS0p4Yk09Ci0tLS0tRU5EIENFUlRJR\
+      klDQVRFLS0tLS0K"
+- name: "slu-ice-dat-vdc-dat-slu-control-1f02c8-0bfef9"
+  cluster:
+    server: "https://10.122.66.49:6443"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN3akNDQ\
+      WFxZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFTTVJBd0RnWURWUVFERXdkcmRXSmwKT\
+      FdOaE1CNFhEVEl4TURFeE1qRXlORFExT1ZvWERUTXhNREV4TURFeU5EUTFPVm93RWpFUU1BNEdBM\
+      VVFQXhNSAphM1ZpWlMxallUQ0NBU0l3RFFZSktvWklodmNOQVFFQkJRQURnZ0VQQURDQ0FRb0NnZ\
+      0VCQUtqWS9lczdOc0ZJCkNYd3VHRDArNmRpcWhhN2Zqb210Y20vcjdlMExsZzJkV2VFenJyZ2YyV\
+      lMvVGN6RGdmZUkwK3BtdmgzR2RveGcKcVA4Nm5Zb25KaGp0Ris4NDAyWWdLZEplLy9ZRDdJSUxxe\
+      VkzdUtNSEd4QmdzNzl0d2d5SlVUbjl3TUViSG9GaAo3MmlYczJlMGRUVExENW9MVVRQTzBldEpTV\
+      zJUU3d1b1RpT05ieStQUHdFcTFkSlBIQ3BTOE5sZVFXOEViVzZqCndvZGtOTXBlWHBZQ0ZKVThsT\
+      VZPYWlJVVFTOXBxczFDa2pNWXNtZmNTbGRObEhNWGhZTWJ0M1ZOeXFMSGFDZlQKWENRcXZydFRBW\
+      Gw3WC9NZ3k5UVNGaUNNa3VWMFQ3a1JLRzBXSnVFOTBFS2tkU2JWaE1RNXpaNkpIak55VHg4TwpHb\
+      kttQXoxS1RzRUNBd0VBQWFNak1DRXdEZ1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93U\
+      UZNQU1CCkFmOHdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBQWZyTUJidVVER1ZsMEcxQnoybU1Ca\
+      0w3Y0diM21mSy9XZjQKcEQ5d1JNK0JHcEJ2OEowOUY3cTJmWC9PbE5rRGtKbGptcnY3aUZLTnY1b\
+      HBCZ0V0VHZ0NnQyZDhjRTZBdmVzawpSSXJDTkFtZ3hRMkptMFJXSHcxc0dRN3NUcWZocTRGaHFLV\
+      ldrQTdZdm5vSklhdm9DNHFINENPc0J3eHdaeXRHCllucU1mZVptRDBLenZBRmRMRUc5Wk5TVEMvN\
+      nJoWlhBV0lHNWNydGxvU1I5THJKTDBmMEVRdDhlMjAxdXdpREwKdmtTUGw3SXk2dWR0SFFKcXFnK\
+      2ZwRUdSS1haeWVqbjZySVlraERkWkpkaDI5RTE5M2wyMWIxWlpVMzkzem80eQpacFEzL3M1SXc5e\
+      URYOUhhZmdYbnZYb3d1OEFTNDQ4dndHM0dxckpGM0JsRWJPS0p4Yk09Ci0tLS0tRU5EIENFUlRJR\
+      klDQVRFLS0tLS0K"
+
+users:
+- name: "slu-ice-dat"
+  user:
+    token: "kubeconfig-u-toraxm4haydckxh:sdlp2wjt9jgfpln5clhzvbrl9zn4sfbgxxnk9nprtrkgrhvnqhbr54"
+
+
+contexts:
+- name: "slu-ice-dat"
+  context:
+    user: "slu-ice-dat"
+    cluster: "slu-ice-dat"
+- name: "slu-ice-dat-vdc-dat-slu-control-1f02c8-0bfef8"
+  context:
+    user: "slu-ice-dat"
+    cluster: "slu-ice-dat-vdc-dat-slu-control-1f02c8-0bfef8"
+- name: "slu-ice-dat-vdc-dat-slu-control-1f02c8-0bfef9"
+  context:
+    user: "slu-ice-dat"
+    cluster: "slu-ice-dat-vdc-dat-slu-control-1f02c8-0bfef9"
+
+current-context: "slu-ice-dat"

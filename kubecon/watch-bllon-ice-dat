@@ -1,0 +1,98 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "watch-bllon-ice-dat"
+  cluster:
+    server: "https://dat.fluidcloud.bskyb.com/k8s/clusters/c-654gz"
+- name: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-23"
+  cluster:
+    server: "https://10.234.31.155:6443"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM0VENDQ\
+      WNtZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFTTVJBd0RnWURWUVFERXdkcmRXSmwKT\
+      FdOaE1CNFhEVEl6TURFek1ERXlORFEwT1ZvWERUTXpNREV5TnpFeU5EUTBPVm93RWpFUU1BNEdBM\
+      VVFQXhNSAphM1ZpWlMxallUQ0NBU0l3RFFZSktvWklodmNOQVFFQkJRQURnZ0VQQURDQ0FRb0NnZ\
+      0VCQU1WUTBMZ3hwQU9sCmdDdnJFNGdRK05vZFBsNGpLMDlKbkozZWxVRytCRUZiVDNVMStXSXpkN\
+      3AvcDd1NHNuK3UyWnlXeU1rVFI0azUKbTR3Qlo5UHRNUnNxMVByYTBYeU9uODRZZG9YZTM3N2MxY\
+      itzRVdpbms3cG9NdS9PemFMTWRJMlJFbnpyQnNvVQpEYnhIVldUUDFWcEZvWDVCZUlod1pVamEyM\
+      TVBSU5MQTFLamVhbys5K2lsd3V5M1NxT3lFWmRjOVZqanVaNkhECm5sVjhrY1pzMm11RS83L3QyS\
+      ER0RUtPblA4bFZKVU9RblY1alJEUzFHZW1NOUh1NGpKTzZEcWwyaVYxYzA3VjIKdXdRMEo0OU9yO\
+      GF4VnUwdEtKRTZkMmQzMG1yemdJZllCZ0IyZm9nTi9jSDdhQzZxTDJBRTZYMGlBREtnK2xIRQpRV\
+      zNFWUtUWk1VOENBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93U\
+      UZNQU1CCkFmOHdIUVlEVlIwT0JCWUVGTWRVTVNJUlhmK0lDNmxTWWNySi9NVTZ0RFVNTUEwR0NTc\
+      UdTSWIzRFFFQkN3VUEKQTRJQkFRQTNqaXNxaHo1Zzg3VlBHL0ZtNlM5TjZuNjR3OVJYczR1QWMwR\
+      mhzUE1XWnExUlRETGZOQjlScURPKwpnNXNhc0RiRWRTVUZiY29abEw1aVROMkQvVkZZWW1yQW9GS\
+      m1tckRLM2ZJSVZqMXZjbEZ5ZkpuUTJHeENUV21JCkJ4QTlXSER5cUZCS1pERmtVQ2pqM3Q2dndzU\
+      DJTYnpWM3dqQ01QYVQxdGRuYm9QU2VnTC96TGdEejV2dVNBOUMKNzlsTW5ONWVVVGlJaDZnTVFZb\
+      GhGeUtuM252c01qRlJrKzNXR3dkMW11aWxzOUdGQVIyc3dncnRrS0VEendUZgo0bTdSanp0NEF2S\
+      EU3WXRXcmpaTFJhTnhyamxVMU4xNkttdDBBWU9BamdiaEo3STFBNHVkbis1QzU0dFZlWGpvCnJFV\
+      ndjenYxVVZQazMxV1N5U2lHSTVibDNsRGQKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+- name: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-24"
+  cluster:
+    server: "https://10.234.31.150:6443"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM0VENDQ\
+      WNtZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFTTVJBd0RnWURWUVFERXdkcmRXSmwKT\
+      FdOaE1CNFhEVEl6TURFek1ERXlORFEwT1ZvWERUTXpNREV5TnpFeU5EUTBPVm93RWpFUU1BNEdBM\
+      VVFQXhNSAphM1ZpWlMxallUQ0NBU0l3RFFZSktvWklodmNOQVFFQkJRQURnZ0VQQURDQ0FRb0NnZ\
+      0VCQU1WUTBMZ3hwQU9sCmdDdnJFNGdRK05vZFBsNGpLMDlKbkozZWxVRytCRUZiVDNVMStXSXpkN\
+      3AvcDd1NHNuK3UyWnlXeU1rVFI0azUKbTR3Qlo5UHRNUnNxMVByYTBYeU9uODRZZG9YZTM3N2MxY\
+      itzRVdpbms3cG9NdS9PemFMTWRJMlJFbnpyQnNvVQpEYnhIVldUUDFWcEZvWDVCZUlod1pVamEyM\
+      TVBSU5MQTFLamVhbys5K2lsd3V5M1NxT3lFWmRjOVZqanVaNkhECm5sVjhrY1pzMm11RS83L3QyS\
+      ER0RUtPblA4bFZKVU9RblY1alJEUzFHZW1NOUh1NGpKTzZEcWwyaVYxYzA3VjIKdXdRMEo0OU9yO\
+      GF4VnUwdEtKRTZkMmQzMG1yemdJZllCZ0IyZm9nTi9jSDdhQzZxTDJBRTZYMGlBREtnK2xIRQpRV\
+      zNFWUtUWk1VOENBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93U\
+      UZNQU1CCkFmOHdIUVlEVlIwT0JCWUVGTWRVTVNJUlhmK0lDNmxTWWNySi9NVTZ0RFVNTUEwR0NTc\
+      UdTSWIzRFFFQkN3VUEKQTRJQkFRQTNqaXNxaHo1Zzg3VlBHL0ZtNlM5TjZuNjR3OVJYczR1QWMwR\
+      mhzUE1XWnExUlRETGZOQjlScURPKwpnNXNhc0RiRWRTVUZiY29abEw1aVROMkQvVkZZWW1yQW9GS\
+      m1tckRLM2ZJSVZqMXZjbEZ5ZkpuUTJHeENUV21JCkJ4QTlXSER5cUZCS1pERmtVQ2pqM3Q2dndzU\
+      DJTYnpWM3dqQ01QYVQxdGRuYm9QU2VnTC96TGdEejV2dVNBOUMKNzlsTW5ONWVVVGlJaDZnTVFZb\
+      GhGeUtuM252c01qRlJrKzNXR3dkMW11aWxzOUdGQVIyc3dncnRrS0VEendUZgo0bTdSanp0NEF2S\
+      EU3WXRXcmpaTFJhTnhyamxVMU4xNkttdDBBWU9BamdiaEo3STFBNHVkbis1QzU0dFZlWGpvCnJFV\
+      ndjenYxVVZQazMxV1N5U2lHSTVibDNsRGQKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+- name: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-25"
+  cluster:
+    server: "https://10.234.31.146:6443"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM0VENDQ\
+      WNtZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFTTVJBd0RnWURWUVFERXdkcmRXSmwKT\
+      FdOaE1CNFhEVEl6TURFek1ERXlORFEwT1ZvWERUTXpNREV5TnpFeU5EUTBPVm93RWpFUU1BNEdBM\
+      VVFQXhNSAphM1ZpWlMxallUQ0NBU0l3RFFZSktvWklodmNOQVFFQkJRQURnZ0VQQURDQ0FRb0NnZ\
+      0VCQU1WUTBMZ3hwQU9sCmdDdnJFNGdRK05vZFBsNGpLMDlKbkozZWxVRytCRUZiVDNVMStXSXpkN\
+      3AvcDd1NHNuK3UyWnlXeU1rVFI0azUKbTR3Qlo5UHRNUnNxMVByYTBYeU9uODRZZG9YZTM3N2MxY\
+      itzRVdpbms3cG9NdS9PemFMTWRJMlJFbnpyQnNvVQpEYnhIVldUUDFWcEZvWDVCZUlod1pVamEyM\
+      TVBSU5MQTFLamVhbys5K2lsd3V5M1NxT3lFWmRjOVZqanVaNkhECm5sVjhrY1pzMm11RS83L3QyS\
+      ER0RUtPblA4bFZKVU9RblY1alJEUzFHZW1NOUh1NGpKTzZEcWwyaVYxYzA3VjIKdXdRMEo0OU9yO\
+      GF4VnUwdEtKRTZkMmQzMG1yemdJZllCZ0IyZm9nTi9jSDdhQzZxTDJBRTZYMGlBREtnK2xIRQpRV\
+      zNFWUtUWk1VOENBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93U\
+      UZNQU1CCkFmOHdIUVlEVlIwT0JCWUVGTWRVTVNJUlhmK0lDNmxTWWNySi9NVTZ0RFVNTUEwR0NTc\
+      UdTSWIzRFFFQkN3VUEKQTRJQkFRQTNqaXNxaHo1Zzg3VlBHL0ZtNlM5TjZuNjR3OVJYczR1QWMwR\
+      mhzUE1XWnExUlRETGZOQjlScURPKwpnNXNhc0RiRWRTVUZiY29abEw1aVROMkQvVkZZWW1yQW9GS\
+      m1tckRLM2ZJSVZqMXZjbEZ5ZkpuUTJHeENUV21JCkJ4QTlXSER5cUZCS1pERmtVQ2pqM3Q2dndzU\
+      DJTYnpWM3dqQ01QYVQxdGRuYm9QU2VnTC96TGdEejV2dVNBOUMKNzlsTW5ONWVVVGlJaDZnTVFZb\
+      GhGeUtuM252c01qRlJrKzNXR3dkMW11aWxzOUdGQVIyc3dncnRrS0VEendUZgo0bTdSanp0NEF2S\
+      EU3WXRXcmpaTFJhTnhyamxVMU4xNkttdDBBWU9BamdiaEo3STFBNHVkbis1QzU0dFZlWGpvCnJFV\
+      ndjenYxVVZQazMxV1N5U2lHSTVibDNsRGQKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+
+users:
+- name: "watch-bllon-ice-dat"
+  user:
+    token: "kubeconfig-u-toraxm4hay574z6:clxh2hcp9lcv69w5hfls7nqqs2zpbftltfl6s6gkvk6fdwfjht8zqd"
+
+
+contexts:
+- name: "watch-bllon-ice-dat"
+  context:
+    user: "watch-bllon-ice-dat"
+    cluster: "watch-bllon-ice-dat"
+- name: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-23"
+  context:
+    user: "watch-bllon-ice-dat"
+    cluster: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-23"
+- name: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-24"
+  context:
+    user: "watch-bllon-ice-dat"
+    cluster: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-24"
+- name: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-25"
+  context:
+    user: "watch-bllon-ice-dat"
+    cluster: "watch-bllon-ice-dat-vdc-dat-watch-bllon-control-25"
+
+current-context: "watch-bllon-ice-dat"
