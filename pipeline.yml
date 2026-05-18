@@ -1,0 +1,51 @@
+resources:
+  - name: repo
+    type: git
+    source:
+      uri: https://github.com/kishan-sky-dne/Watchman_FC_Conn_Check.git
+      username: ((common-creds.github_username))
+      password: ((common-creds.github_personal_access_token))
+      branch: main
+jobs:
+  - name: get-pods-rpki
+    public: true
+    plan:
+      - get: repo
+        trigger: true
+      - task: get-pods-rpki
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source:
+              repository: bitnami/kubectl
+          inputs:
+            - name: repo
+          run:
+            path: /bin/sh
+            args:
+              - -exc
+              - |
+                # For every kubeconfig in repo/kubecon, run kubectl get pods
+                KUBECONF_DIR="repo/kubecon"
+                NAMESPACE="dne-develop-rpki"
+
+                if [ ! -d "$KUBECONF_DIR" ]; then
+                  echo "kubecon directory not found at $KUBECONF_DIR" >&2
+                  exit 1
+                fi
+
+                found=false
+                for kc in "$KUBECONF_DIR"/*; do
+                  if [ -f "$kc" ]; then
+                    found=true
+                    echo "----- Pods using kubeconfig: $kc (namespace: $NAMESPACE) -----"
+                    kubectl --kubeconfig="$kc" get pods -n "$NAMESPACE" -o wide || echo "kubectl failed for $kc"
+                    echo
+                  fi
+                done
+
+                if [ "$found" != true ]; then
+                  echo "No kubeconfig files found in $KUBECONF_DIR" >&2
+                  exit 1
+                fi
