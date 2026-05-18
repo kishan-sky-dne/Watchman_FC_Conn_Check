@@ -28,7 +28,7 @@ jobs:
               - |
                 # For every kubeconfig in repo/kubecon, run kubectl get pods
                 KUBECONF_DIR="repo/kubecon"
-                NAMESPACE="dne-develop-rpki"
+                NAMESPACE="dne-develop"
 
                 if [ ! -d "$KUBECONF_DIR" ]; then
                   echo "kubecon directory not found at $KUBECONF_DIR" >&2
